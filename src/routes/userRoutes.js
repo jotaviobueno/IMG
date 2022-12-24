@@ -10,11 +10,13 @@ import ShowOutherProfileController from '../Module/User/app/useCases/showOutherP
 import ValidateSession from '../Module/User/app/Middleware/ValidateSession.js';
 import ValidateUser from '../Module/User/app/Middleware/ValidateUser.js';
 
+import UserRequest from '../Module/User/app/Request/UserRequest.js';
+
 const userRoutes = Router();
 
-userRoutes.post("/", CreateUserController.handle );
-userRoutes.get("/", ValidateSession, ValidateUser, ShowProfileController.handle );
-userRoutes.get("/:username", ValidateSession, ShowOutherProfileController.handle );
+userRoutes.post("/", UserRequest.storage, CreateUserController.handle );
+userRoutes.get("/", UserRequest.profile, ValidateSession, ValidateUser, ShowProfileController.handle );
+userRoutes.get("/:username", UserRequest.outherProfile, ValidateSession, ShowOutherProfileController.handle );
 userRoutes.put("/update/username", ValidateSession, ValidateUser, UpdateUsernameController.handle );
 
 export {userRoutes};
