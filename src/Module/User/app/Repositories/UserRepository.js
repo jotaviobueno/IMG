@@ -11,11 +11,15 @@ class UserRepository {
     }
 
     async findByUsername(username) {
-        return await this._userModel.findOne({username: username.replace(" ", ""), deleted_at: null});
+       return await this._userModel.findOne({username: username.replace(" ", ""), deleted_at: null});
     }
 
     async findByEmail(email) {
         return await this._userModel.findOne({email, deleted_at: null});
+    }
+
+    async findById(_id) {
+        return await this._userModel.findOne({_id, deleted_at: null});
     }
 
     async createUser(full_name, username, email, password, birth_date, avatar_url) {
