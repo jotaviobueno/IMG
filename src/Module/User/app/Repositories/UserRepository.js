@@ -36,6 +36,12 @@ class UserRepository {
             deleted_at: null
         });
     }
+
+    async update(_id, updateField, value) {
+        return await this._userModel.updateOne({_id, deleted_at: null}, {
+            [updateField]: value, updated_at: new Date(),
+        });
+    }
 }
 
 export default new UserRepository;
