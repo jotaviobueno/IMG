@@ -1,6 +1,6 @@
 import UserModel from '../Models/UserModel.js';
 
-import bcryptHelper from '../../Helper/BcryptHelper.js';
+import bcryptHelper from '../Helper/BcryptHelper.js';
 
 class UserRepository {
 

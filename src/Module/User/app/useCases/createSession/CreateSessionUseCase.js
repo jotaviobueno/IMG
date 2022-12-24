@@ -1,7 +1,7 @@
 import UserRepository from '../../Repositories/UserRepository.js';
 import SessionRepository from '../../Repositories/SessionRepository.js';
 
-import BcryptHelper from '../../../Helper/BcryptHelper.js';
+import BcryptHelper from '../../Helper/BcryptHelper.js';
 
 class CreateSessionUseCase {
 

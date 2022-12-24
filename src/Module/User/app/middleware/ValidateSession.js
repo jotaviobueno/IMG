@@ -1,6 +1,6 @@
 import SessionRepository from '../Repositories/SessionRepository.js';
 
-import CompareSession from '../../Helper/CompareSession.js';
+import CompareSession from '../Helper/CompareSession.js';
 
 export default async function ValidateSession(req, res, next) {
     const {session_id} = req.headers;
