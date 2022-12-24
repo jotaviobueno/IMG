@@ -10,6 +10,7 @@ import ShowOutherProfileController from '../Module/User/app/useCases/showOutherP
 import ValidateSession from '../Module/User/app/Middleware/ValidateSession.js';
 import ValidateUser from '../Module/User/app/Middleware/ValidateUser.js';
 
+// Request Validator
 import UserRequest from '../Module/User/app/Request/UserRequest.js';
 import UpdateRequest from '../Module/User/app/Request/UpdateRequest.js'
 

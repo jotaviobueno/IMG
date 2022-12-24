@@ -1,6 +1,6 @@
 import yup from "yup";
 
-class UserRequest {
+class UpdateRequest {
 
 	async updateUsername ( req, res, next ) {
 
@@ -24,4 +24,4 @@ class UserRequest {
 	}
 }
 
-export default new UserRequest;
+export default new UpdateRequest;
