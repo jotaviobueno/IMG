@@ -20,7 +20,6 @@ class ShowOutherProfileUseCase {
             return {status: 200, message: { user: UserDTO(user) }};
 
     }
-
 }
 
 export default ShowOutherProfileUseCase
