@@ -26,6 +26,10 @@ class SessionRepository {
     async existSession(session_id) {
         return await this._sessionModel.findOne({session_id, disconnected_in: null });
     }
+
+    async getAllSession(user_id) {
+        return await this._sessionModel.find({user_id, disconnected_in: null});
+    }
 }
 
 export default new SessionRepository;

@@ -27,7 +27,7 @@ class CreateSessionUseCase {
         const session = await this._sessionRepository.createSession(email, user._id, userAgent, address_ip);
 
         if (session)
-            return {status: 201, message: { session: SessionDTO(session) }};
+            return {status: 201, message: { session: SessionDTO.oneSessionDTO(session) }};
 
         return {status: 500, message: { error: "invalid request, try again" }};
     }
