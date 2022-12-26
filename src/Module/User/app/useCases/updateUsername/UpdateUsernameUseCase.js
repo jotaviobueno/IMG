@@ -10,9 +10,6 @@ class UpdateUsernameUseCase {
 
     async execute(user, username) {
 
-        if (user.username === username)
-            return {status: 409, message: { error: "the username entered is the same as your account" }};
-
         if (await this._userRepository.findByUsername(username))
             return {status: 400, message: { error: "username already exist" }};
 
