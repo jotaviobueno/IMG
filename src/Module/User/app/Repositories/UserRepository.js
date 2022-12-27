@@ -43,6 +43,12 @@ class UserRepository {
             [updateField]: value, updated_at: new Date(),
         });
     }
+
+    async turnAdmin(_id) {
+        return await this._userModel.updateOne({_id, deleted_at: null}, { 
+            is_admin: true, updated_at: new Date(), $push: { permissions: "admin" } 
+        });
+    }
 }
 
 export default new UserRepository;
