@@ -16,10 +16,12 @@ class UpdateUsernameUseCase {
         if (await this._userRepository.findByUsername(username))
             return {status: 400, message: { error: "username already exist" }};
 
-        if (await this._userRepository.update(user._id, "username", username))
-            return {status: 204, message: { success: "" }};
+        const update = await this._userRepository.update(user._id, "username", username);
 
-        return {status: 500, message: { error: "try again" }};
+        if (update.modifiedCount === 1)
+            return {status: 204, message: { success: "" }};
+        else
+            return {status: 500, message: { error: "try again" }};
     }
 }
 
