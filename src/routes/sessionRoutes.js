@@ -14,6 +14,6 @@ const sessionRoutes = Router();
 sessionRoutes.post("/", CreateSessionController.handle );
 sessionRoutes.get("/", ValidateSession, ValidateUser, GetAllSessionController.handle );
 sessionRoutes.post("/disconnect", ValidateSession, ValidateUser, DisconnectSessionController.handle );
-sessionRoutes.post("/many-disconnect", ValidateSession, ValidateUser, DisconnectAllSessionController.handle );
+sessionRoutes.post("/disconnect-many", ValidateSession, ValidateUser, DisconnectAllSessionController.handle );
 
 export {sessionRoutes};
