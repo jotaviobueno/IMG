@@ -3,6 +3,7 @@ export default function UserDTO (user) {
         full_name: user.full_name,
         username: user.username,
         email: user.email,
+        permissions: user.permissions,
         avatar_url: user.avatar_url,
         birth_date: user.birth_date,
         created_at: user.created_at,
