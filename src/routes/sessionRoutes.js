@@ -1,9 +1,9 @@
 import {Router} from 'express';
 
-import CreateSessionController from '../Module/User/app/useCases/createSession/CreateSessionController.js';
-import GetAllSessionController from '../Module/User/app/useCases/getAllSession/getAllSessionController.js';
-import DisconnectSessionController from '../Module/User/app/useCases/disconnectSession/disconnectSessionController.js';
-import DisconnectAllSessionController from '../Module/User/app/useCases/disconnectAllSession/disconnectAllSessionController.js';
+import CreateSessionController from "../Module/User/app/useCases/session/createSession/CreateSessionController.js";
+import GetAllSessionController from '../Module/User/app/useCases/session/getAllSession/getAllSessionController.js';
+import DisconnectSessionController from '../Module/User/app/useCases/session/disconnectSession/disconnectSessionController.js';
+import DisconnectAllSessionController from '../Module/User/app/useCases/session/disconnectAllSession/disconnectAllSessionController.js';
 
 // Middlewares
 import ValidateSession from '../Module/User/app/Middleware/ValidateSession.js';

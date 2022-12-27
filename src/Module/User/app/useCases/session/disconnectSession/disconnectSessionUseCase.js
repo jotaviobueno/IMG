@@ -1,4 +1,4 @@
-import SessionRepository from "../../Repositories/SessionRepository.js";
+import SessionRepository from "../../../Repositories/SessionRepository.js";
 
 class disconnectSessionUseCase {
 

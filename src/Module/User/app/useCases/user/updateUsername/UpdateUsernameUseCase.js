@@ -1,4 +1,4 @@
-import UserRepository from "../../Repositories/UserRepository.js";
+import UserRepository from "../../../Repositories/UserRepository.js";
 
 class UpdateUsernameUseCase {
 

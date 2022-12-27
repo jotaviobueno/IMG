@@ -1,6 +1,6 @@
-import SessionRepository from '../../Repositories/SessionRepository.js';
+import SessionRepository from '../../../Repositories/SessionRepository.js';
 
-import SessionDTO from '../../DTO/Response/SessionDTO.js';
+import SessionDTO from '../../../DTO/Response/SessionDTO.js';
 
 class GetAllSessionUseCase {
 

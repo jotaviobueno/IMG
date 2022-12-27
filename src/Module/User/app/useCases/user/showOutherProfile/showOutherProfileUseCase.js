@@ -1,6 +1,6 @@
-import UserRepository from "../../Repositories/UserRepository.js"
+import UserRepository from "../../../Repositories/UserRepository.js"
 
-import UserDTO from '../../DTO/Response/UserDTO.js'
+import UserDTO from '../../../DTO/Response/UserDTO.js'
 
 class ShowOutherProfileUseCase {
 

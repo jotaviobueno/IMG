@@ -1,6 +1,6 @@
-import UserRepository from '../../Repositories/UserRepository.js';
+import UserRepository from '../../../Repositories/UserRepository.js';
 
-import DateFormatHelper from '../../DTO/Response/DateFormatHelper.js';
+import DateFormatHelper from '../../../DTO/Response/DateFormatHelper.js';
 
 class UpdateBirthDateUseCase {
 

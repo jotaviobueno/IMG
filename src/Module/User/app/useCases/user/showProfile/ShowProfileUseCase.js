@@ -1,4 +1,4 @@
-import UserDTO from '../../DTO/Response/UserDTO.js';
+import UserDTO from '../../../DTO/Response/UserDTO.js';
 
 class ShowProfileUseCase {
 

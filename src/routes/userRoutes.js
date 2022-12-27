@@ -1,11 +1,11 @@
 import {Router} from 'express';
 
 // Controller's
-import CreateUserController from '../Module/User/app/useCases/createUser/CreateUserController.js';
-import ShowProfileController from '../Module/User/app/useCases/showProfile/ShowProfileController.js';
-import ShowOutherProfileController from '../Module/User/app/useCases/showOutherProfile/showOutherProfileController.js';
-import UpdateUsernameController from '../Module/User/app/useCases/updateUsername/UpdateUsernameController.js';
-import updateBirthDateController from '../Module/User/app/useCases/updateBirthDate/updateBirthDateController.js';
+import CreateUserController from '../Module/User/app/useCases/user/createUser/CreateUserController.js';
+import ShowProfileController from '../Module/User/app/useCases/user/showProfile/ShowProfileController.js';
+import ShowOutherProfileController from '../Module/User/app/useCases/user/showOutherProfile/showOutherProfileController.js';
+import UpdateUsernameController from '../Module/User/app/useCases/user/updateUsername/UpdateUsernameController.js';
+import updateBirthDateController from '../Module/User/app/useCases/user/updateBirthDate/updateBirthDateController.js';
 
 // Middlewares
 import ValidateSession from '../Module/User/app/Middleware/ValidateSession.js';

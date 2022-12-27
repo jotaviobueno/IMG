@@ -1,8 +1,8 @@
-import UserRepository from '../../Repositories/UserRepository.js';
-import SessionRepository from '../../Repositories/SessionRepository.js';
+import UserRepository from '../../../Repositories/UserRepository.js';
+import SessionRepository from '../../../Repositories/SessionRepository.js';
 
-import SessionDTO from '../../DTO/Response/SessionDTO.js';
-import BcryptHelper from '../../Helper/BcryptHelper.js';
+import SessionDTO from '../../../DTO/Response/SessionDTO.js';
+import BcryptHelper from '../../../Helper/BcryptHelper.js';
 
 class CreateSessionUseCase {
 

@@ -3,7 +3,7 @@ import {Router} from 'express';
 const adminRoutes = Router();
 
 // Controller
-import turnAdminController from '../Module/User/app/useCases/turnAdmin/turnAdminController.js';
+import turnAdminController from '../Module/User/app/useCases/admin/turnAdmin/turnAdminController.js';
 
 // Middlewares
 import isAdmin from '../Module/User/app/Middleware/IsAdmin.js'
