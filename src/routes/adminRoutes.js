@@ -10,7 +10,9 @@ import isAdmin from '../Module/User/app/Middleware/IsAdmin.js'
 import ValidateSession from '../Module/User/app/Middleware/ValidateSession.js';
 import ValidateUser from '../Module/User/app/Middleware/ValidateUser.js';
 
+import AdminRequest from '../Module/User/app/Request/AdminRequest.js'
 
-adminRoutes.post("/", ValidateSession, ValidateUser, isAdmin, turnAdminController.handle );
+
+adminRoutes.post("/", AdminRequest.turnAdmin, ValidateSession, ValidateUser, isAdmin, turnAdminController.handle );
 
 export {adminRoutes};
