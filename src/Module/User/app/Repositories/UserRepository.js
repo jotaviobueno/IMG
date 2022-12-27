@@ -28,9 +28,10 @@ class UserRepository {
             username: username.replace(" ", ""),
             email,
             password: await bcryptHelper.generateHash(password, 10),
+            is_admin: false,
             avatar_url: avatar_url ?? " ",
-            birth_date: new Date(birth_date), 
-            permissions: ["guest"],
+            birth_date: birth_date,
+            permissions: ["user"],
             created_at: new Date(),
             updated_at: new Date(),
             deleted_at: null
