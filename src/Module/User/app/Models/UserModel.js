@@ -10,6 +10,7 @@ const User = new Schema({
 	password: { type: String, required: true },
 	avatar_url: { type: String },
 	birth_date: { type: Date, required: true },
+	is_admin: { type: Boolean, required: true },
 	permissions: { type: Array, required: true },
 	created_at: { type: Date, default: Date.now, required: true },
 	updated_at: { type: Date, required: true },
